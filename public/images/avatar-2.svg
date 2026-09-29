@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="58" fill="#EBE4D5" stroke="#2B4A34" stroke-width="3"/>
+  <!-- Man with Cat -->
+  <circle cx="55" cy="45" r="22" fill="#E8B595"/>
+  <path d="M35 25 Q 55 15 75 25 Q 75 35 35 35 Z" fill="#241B15"/>
+  <path d="M15 110 C 15 85, 95 85, 95 110 Z" fill="#3D6549"/>
+  <!-- Cat in arms -->
+  <polygon points="75,60 82,75 68,75" fill="#D1D5DB"/>
+  <polygon points="95,60 102,75 88,75" fill="#D1D5DB"/>
+  <circle cx="85" cy="78" r="16" fill="#E5E7EB"/>
+  <circle cx="80" cy="76" r="2" fill="#2B2016"/>
+  <circle cx="90" cy="76" r="2" fill="#2B2016"/>
+</svg>

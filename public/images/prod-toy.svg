@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <rect width="300" height="300" fill="transparent"/>
+  <!-- Teddy Bear -->
+  <ellipse cx="150" cy="180" rx="60" ry="70" fill="#C98B42"/>
+  <ellipse cx="150" cy="190" rx="38" ry="48" fill="#E5B26E"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="50" fill="#C98B42"/>
+  <!-- Ears -->
+  <circle cx="105" cy="65" r="20" fill="#C98B42"/>
+  <circle cx="105" cy="65" r="12" fill="#E5B26E"/>
+  <circle cx="195" cy="65" r="20" fill="#C98B42"/>
+  <circle cx="195" cy="65" r="12" fill="#E5B26E"/>
+
+  <!-- Face -->
+  <ellipse cx="150" cy="115" rx="22" ry="16" fill="#F8DFBE"/>
+  <ellipse cx="150" cy="108" rx="8" ry="6" fill="#2B2016"/>
+  <circle cx="132" cy="95" r="5" fill="#2B2016"/>
+  <circle cx="168" cy="95" r="5" fill="#2B2016"/>
+  <path d="M142 120 Q 150 128 158 120" fill="none" stroke="#2B2016" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Paws -->
+  <circle cx="85" cy="170" r="20" fill="#C98B42"/>
+  <circle cx="215" cy="170" r="20" fill="#C98B42"/>
+  <ellipse cx="110" cy="250" rx="24" ry="18" fill="#C98B42"/>
+  <ellipse cx="190" cy="250" rx="24" ry="18" fill="#C98B42"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <rect width="300" height="300" fill="transparent"/>
+  <!-- Pump Dispenser -->
+  <rect x="142" y="30" width="16" height="30" fill="#2B2016"/>
+  <path d="M135 30 L165 30 L165 20 L120 20 Z" fill="#2B2016"/>
+  <rect x="135" y="60" width="30" height="15" fill="#C98B42"/>
+
+  <!-- Bottle Body -->
+  <rect x="110" y="75" width="80" height="180" rx="24" fill="#F8F5EE" stroke="#DDD2C1" stroke-width="3"/>
+  
+  <!-- Label -->
+  <rect x="118" y="110" width="64" height="110" rx="6" fill="#FAF7F0" stroke="#E2D6C0" stroke-width="1.5"/>
+  <text x="150" y="130" font-family="serif" font-weight="bold" font-size="10" fill="#2B4A34" text-anchor="middle">PawVita</text>
+  <text x="150" y="148" font-family="sans-serif" font-weight="bold" font-size="8" fill="#D4A017" text-anchor="middle" letter-spacing="1">OATMEAL</text>
+  <text x="150" y="160" font-family="sans-serif" font-size="7" fill="#6B6357" text-anchor="middle">Pet Shampoo</text>
+  
+  <circle cx="150" cy="190" r="14" fill="#E8B068"/>
+  <circle cx="145" cy="188" r="2" fill="#2B2016"/>
+  <circle cx="155" cy="188" r="2" fill="#2B2016"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="100%" height="100%">
+  <defs>
+    <radialGradient id="boxGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E2B880"/>
+      <stop offset="100%" stop-color="#B88A52"/>
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FBF9F3" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F3EEE1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="350" fill="transparent"/>
+  <circle cx="200" cy="180" r="140" fill="url(#goldGlow)"/>
+  
+  <!-- Cardboard Box -->
+  <path d="M90 200 L310 200 L285 310 L115 310 Z" fill="url(#boxGrad)" stroke="#8C6335" stroke-width="3"/>
+  <path d="M70 190 L90 200 L115 310 L50 250 Z" fill="#9E7441"/>
+  <path d="M330 190 L310 200 L285 310 L350 250 Z" fill="#9E7441"/>
+  
+  <!-- Paw Logo on Box -->
+  <circle cx="200" cy="255" r="14" fill="#2B4A34"/>
+  <circle cx="186" cy="235" r="7" fill="#2B4A34"/>
+  <circle cx="200" cy="228" r="7" fill="#2B4A34"/>
+  <circle cx="214" cy="235" r="7" fill="#2B4A34"/>
+  <text x="200" y="288" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2B4A34" text-anchor="middle" letter-spacing="1">LOVE VET</text>
+
+  <!-- Golden Puppy Head -->
+  <ellipse cx="200" cy="140" rx="65" ry="60" fill="#E8B068"/>
+  <!-- Ears -->
+  <path d="M140 105 C 110 110, 110 170, 145 180 Z" fill="#C98B42"/>
+  <path d="M260 105 C 290 110, 290 170, 255 180 Z" fill="#C98B42"/>
+  <!-- Muzzle -->
+  <ellipse cx="200" cy="155" rx="32" ry="24" fill="#F8DFBE"/>
+  <ellipse cx="200" cy="145" rx="14" ry="10" fill="#2B2016"/>
+  <!-- Eyes -->
+  <circle cx="175" cy="125" r="9" fill="#2B2016"/>
+  <circle cx="178" cy="122" r="3" fill="#FFFFFF"/>
+  <circle cx="225" cy="125" r="9" fill="#2B2016"/>
+  <circle cx="228" cy="122" r="3" fill="#FFFFFF"/>
+  <!-- Tongue -->
+  <path d="M194 165 C 194 185, 206 185, 206 165 Z" fill="#E86B7B"/>
+  
+  <!-- Paws on box rim -->
+  <ellipse cx="145" cy="200" rx="18" ry="12" fill="#E8B068"/>
+  <ellipse cx="255" cy="200" rx="18" ry="12" fill="#E8B068"/>
+</svg>

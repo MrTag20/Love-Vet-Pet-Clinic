@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Tokens */
+  --bg-base: #F3EEE1;
+  --bg-base-dark: #E8E1D0;
+  --primary-green: #2B4A34;
+  --primary-green-light: #3D6549;
+  --primary-green-dark: #1D3424;
+  --accent-gold: #D4A017;
+  --accent-gold-soft: #F0D98C;
+  --accent-gold-light: #F8E8B4;
+  --text-dark: #1E2A22;
+  --text-muted: #6B6357;
+  --white-soft: #FBF9F3;
+
+  /* Neumorphic Shadows */
+  --shadow-raised: 8px 8px 18px rgba(163, 148, 116, 0.35), -8px -8px 18px rgba(255, 255, 255, 0.9);
+  --shadow-raised-hover: 12px 12px 22px rgba(163, 148, 116, 0.42), -12px -12px 22px rgba(255, 255, 255, 0.98);
+  --shadow-raised-sm: 4px 4px 10px rgba(163, 148, 116, 0.3), -4px -4px 10px rgba(255, 255, 255, 0.85);
+  --shadow-raised-lg: 14px 14px 28px rgba(163, 148, 116, 0.32), -14px -14px 28px rgba(255, 255, 255, 0.95);
+  --shadow-inset: inset 5px 5px 10px rgba(163, 148, 116, 0.32), inset -5px -5px 10px rgba(255, 255, 255, 0.85);
+  --shadow-inset-sm: inset 3px 3px 6px rgba(163, 148, 116, 0.28), inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+  --shadow-floating: 16px 16px 32px rgba(163, 148, 116, 0.35), -16px -16px 32px rgba(255, 255, 255, 0.95);
+
+  /* Dark Neumorphism (for Dark Green Footer / Badges) */
+  --shadow-dark-raised: 6px 6px 14px rgba(15, 27, 19, 0.65), -5px -5px 12px rgba(55, 93, 67, 0.4);
+  --shadow-dark-raised-sm: 3px 3px 8px rgba(15, 27, 19, 0.6), -3px -3px 8px rgba(55, 93, 67, 0.35);
+  --shadow-dark-inset: inset 4px 4px 8px rgba(15, 27, 19, 0.7), inset -4px -4px 8px rgba(55, 93, 67, 0.3);
+}
+
+@theme {
+  --color-bg-base: #F3EEE1;
+  --color-bg-base-dark: #E8E1D0;
+  --color-primary-green: #2B4A34;
+  --color-primary-green-light: #3D6549;
+  --color-primary-green-dark: #1D3424;
+  --color-accent-gold: #D4A017;
+  --color-accent-gold-soft: #F0D98C;
+  --color-accent-gold-light: #F8E8B4;
+  --color-text-dark: #1E2A22;
+  --color-text-muted: #6B6357;
+  --color-white-soft: #FBF9F3;
+  --font-serif: var(--font-fraunces), serif;
+  --font-sans: var(--font-plus-jakarta), sans-serif;
+}
+
+/* Custom Base Rules */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-base);
+  color: var(--text-dark);
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-dark);
+  font-family: var(--font-plus-jakarta), sans-serif;
+  overflow-x: clip;
+}
+
+/* Neumorphic Utility Classes */
+.neu-raised {
+  box-shadow: var(--shadow-raised);
+}
+
+.neu-raised:hover {
+  box-shadow: var(--shadow-raised-hover);
+}
+
+.neu-raised-sm {
+  box-shadow: var(--shadow-raised-sm);
+}
+
+.neu-raised-lg {
+  box-shadow: var(--shadow-raised-lg);
+}
+
+.neu-inset {
+  box-shadow: var(--shadow-inset);
+}
+
+.neu-inset-sm {
+  box-shadow: var(--shadow-inset-sm);
+}
+
+.neu-floating {
+  box-shadow: var(--shadow-floating);
+}
+
+.neu-dark-raised {
+  box-shadow: var(--shadow-dark-raised);
+}
+
+.neu-dark-raised-sm {
+  box-shadow: var(--shadow-dark-raised-sm);
+}
+
+.neu-dark-inset {
+  box-shadow: var(--shadow-dark-inset);
+}
+
+/* Input Focus Glow & Accessibility */
+input:focus, select:focus, textarea:focus, button:focus-visible {
+  outline: none;
+  border-color: #D4A017;
+  ring: 2px solid #D4A017;
+}
+
+.neu-focus:focus-visible {
+  outline: 2px solid #D4A017;
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4BAA6;
+  border-radius: 9999px;
+  border: 2px solid var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A39474;
+}
+
+/* Mobile Shadow scaling */
+@media (max-width: 640px) {
+  :root {
+    --shadow-raised: 5px 5px 12px rgba(163, 148, 116, 0.3), -5px -5px 12px rgba(255, 255, 255, 0.85);
+    --shadow-raised-lg: 8px 8px 18px rgba(163, 148, 116, 0.3), -8px -8px 18px rgba(255, 255, 255, 0.9);
+    --shadow-inset: inset 4px 4px 8px rgba(163, 148, 116, 0.28), inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+    --shadow-floating: 10px 10px 20px rgba(163, 148, 116, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.9);
+  }
+}

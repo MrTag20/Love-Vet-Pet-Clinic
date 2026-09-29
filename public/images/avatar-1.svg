@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="58" fill="#EBE4D5" stroke="#D4A017" stroke-width="3"/>
+  <!-- Woman with Golden Pup -->
+  <circle cx="50" cy="45" r="22" fill="#F4CDB5"/>
+  <path d="M25 45 C 25 20, 75 20, 75 45 C 75 60, 65 75, 50 75 C 35 75, 25 60, 25 45 Z" fill="#6A3B22"/>
+  <path d="M20 110 C 20 85, 80 85, 80 110 Z" fill="#2B4A34"/>
+  <!-- Pup in arm -->
+  <circle cx="80" cy="75" r="18" fill="#E8B068"/>
+  <circle cx="75" cy="72" r="2" fill="#2B2016"/>
+  <circle cx="85" cy="72" r="2" fill="#2B2016"/>
+  <ellipse cx="80" cy="78" rx="3" ry="2" fill="#2B2016"/>
+</svg>

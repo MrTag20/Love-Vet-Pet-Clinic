@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="docBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6EE"/>
+      <stop offset="100%" stop-color="#E2D8C3"/>
+    </linearGradient>
+    <linearGradient id="scrubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B4A34"/>
+      <stop offset="100%" stop-color="#1D3424"/>
+    </linearGradient>
+    <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="85%" stop-color="#D4A017" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#D4A017" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background with subtle warm vignette -->
+  <rect width="600" height="700" rx="32" fill="url(#docBg)"/>
+  <circle cx="300" cy="300" r="240" fill="#F3EEE1"/>
+  <circle cx="300" cy="300" r="235" fill="none" stroke="#D4A017" stroke-width="4" stroke-dasharray="8 6"/>
+
+  <!-- Doctor Body / Scrub Suit -->
+  <path d="M140 700 L170 480 C 180 430, 420 430, 430 480 L460 700 Z" fill="url(#scrubGrad)"/>
+  
+  <!-- Stethoscope -->
+  <path d="M230 440 C 230 550, 270 580, 270 600" fill="none" stroke="#9EA7A0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M370 440 C 370 550, 330 580, 330 600" fill="none" stroke="#9EA7A0" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="300" cy="620" r="22" fill="#D4A017" stroke="#9EA7A0" stroke-width="6"/>
+
+  <!-- Neck & Face -->
+  <rect x="260" y="380" width="80" height="90" rx="10" fill="#E8B595"/>
+  <ellipse cx="300" cy="280" rx="105" ry="130" fill="#F4CDB5"/>
+  
+  <!-- Hair -->
+  <path d="M190 280 C 180 140, 420 140, 410 280 C 430 360, 420 440, 390 470 C 360 410, 380 250, 300 230 C 220 250, 240 410, 210 470 C 180 440, 170 360, 190 280 Z" fill="#241B15"/>
+
+  <!-- Facial Features -->
+  <!-- Eyebrows -->
+  <path d="M240 240 Q 260 230 280 240" fill="none" stroke="#241B15" stroke-width="4" stroke-linecap="round"/>
+  <path d="M320 240 Q 340 230 360 240" fill="none" stroke="#241B15" stroke-width="4" stroke-linecap="round"/>
+  <!-- Eyes -->
+  <circle cx="260" cy="260" r="10" fill="#241B15"/>
+  <circle cx="263" cy="257" r="3.5" fill="#FFFFFF"/>
+  <circle cx="340" cy="260" r="10" fill="#241B15"/>
+  <circle cx="343" cy="257" r="3.5" fill="#FFFFFF"/>
+  <!-- Nose -->
+  <path d="M296 265 L292 295 L304 295" fill="none" stroke="#C98F71" stroke-width="3" stroke-linecap="round"/>
+  <!-- Gentle Smile -->
+  <path d="M268 330 Q 300 360 332 330" fill="none" stroke="#A84C4C" stroke-width="4" stroke-linecap="round"/>
+  <path d="M272 332 Q 300 350 328 332" fill="#FFFFFF"/>
+
+  <!-- Holding Cute Kitten or Dog silhouette in arm -->
+  <ellipse cx="410" cy="530" rx="55" ry="50" fill="#E8B068"/>
+  <polygon points="380,480 395,510 370,510" fill="#C98B42"/>
+  <polygon points="430,480 445,510 420,510" fill="#C98B42"/>
+  <circle cx="400" cy="525" r="4" fill="#2B2016"/>
+  <circle cx="425" cy="525" r="4" fill="#2B2016"/>
+  <ellipse cx="412" cy="535" rx="5" ry="3" fill="#2B2016"/>
+
+  <!-- Badge in corner -->
+  <g transform="translate(420, 60)">
+    <circle cx="50" cy="50" r="46" fill="#D4A017" stroke="#FBF9F3" stroke-width="4"/>
+    <text x="50" y="44" font-family="sans-serif" font-weight="900" font-size="20" fill="#1E2A22" text-anchor="middle">12+</text>
+    <text x="50" y="62" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1E2A22" text-anchor="middle" letter-spacing="1">YEARS EXP</text>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="58" fill="#EBE4D5" stroke="#D4A017" stroke-width="3"/>
+  <!-- Lady with Beagle -->
+  <circle cx="55" cy="45" r="22" fill="#F8DFBE"/>
+  <path d="M30 40 C 30 18, 80 18, 80 40 C 85 70, 75 90, 55 85 Z" fill="#8B4513"/>
+  <path d="M15 110 C 15 85, 95 85, 95 110 Z" fill="#D4A017"/>
+  <!-- Beagle -->
+  <circle cx="82" cy="75" r="16" fill="#F8F5EE"/>
+  <path d="M70 65 C 65 75, 68 85, 74 80 Z" fill="#8B4513"/>
+  <circle cx="80" cy="73" r="2" fill="#2B2016"/>
+  <ellipse cx="84" cy="77" rx="3" ry="2" fill="#2B2016"/>
+</svg>
