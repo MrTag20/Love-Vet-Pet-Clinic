@@ -5,16 +5,10 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
   Sparkles,
-  Award,
-  Star,
-  Users,
   Calendar,
-  CheckCircle2,
-  Heart,
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react';
-import { NeuCard } from '@/components/ui/NeuCard';
 import { NeuButton } from '@/components/ui/NeuButton';
 import { NeuBadge } from '@/components/ui/NeuBadge';
 import { Doctor } from '@/types';

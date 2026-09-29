@@ -18,8 +18,20 @@ import { NeuIconDisc } from '@/components/ui/NeuIconDisc';
 import { NeuButton } from '@/components/ui/NeuButton';
 import { NeuBadge } from '@/components/ui/NeuBadge';
 
+interface ServiceDetail {
+  id: string;
+  title: string;
+  category: string;
+  shortDesc: string;
+  icon: React.ElementType;
+  badge: string;
+  details: string[];
+  price: string;
+  time: string;
+}
+
 export const ServicesSection: React.FC = () => {
-  const [selectedService, setSelectedService] = useState<any | null>(null);
+  const [selectedService, setSelectedService] = useState<ServiceDetail | null>(null);
 
   const services = [
     {

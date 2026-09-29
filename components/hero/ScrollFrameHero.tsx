@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShieldCheck, Clock, HeartHandshake, Sparkles, ChevronDown, ArrowDown } from 'lucide-react';
+import { ShieldCheck, Clock, HeartHandshake, Sparkles, ChevronDown } from 'lucide-react';
 import { NeuButton } from '@/components/ui/NeuButton';
 
 interface ScrollFrameHeroProps {
@@ -134,7 +134,6 @@ export const ScrollFrameHero: React.FC<ScrollFrameHeroProps> = ({
     imagesRef.current = images;
 
     // 2. Preload remaining frames
-    let loadedCount = 1;
     const loadNextBatch = (startIndex: number, batchSize: number) => {
       if (isCancelled || startIndex >= frameCount) return;
 
@@ -148,7 +147,6 @@ export const ScrollFrameHero: React.FC<ScrollFrameHeroProps> = ({
 
         const onDone = () => {
           if (isCancelled) return;
-          loadedCount++;
           batchLoaded++;
           if (batchLoaded === endIndex - startIndex) {
             setTimeout(() => loadNextBatch(endIndex, batchSize), 16);

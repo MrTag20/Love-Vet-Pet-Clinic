@@ -30,7 +30,7 @@ export async function POST(request: Request) {
       },
       { status: 200 }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
     if (error instanceof z.ZodError) {
       return NextResponse.json(
         {
@@ -45,7 +45,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         success: false,
-        message: 'Internal server error processing appointment.',
+        message: error instanceof Error ? error.message : 'Internal server error processing appointment.',
       },
       { status: 500 }
     );

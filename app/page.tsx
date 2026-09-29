@@ -18,13 +18,12 @@ import { Footer } from '@/components/sections/Footer';
 export default function Home() {
   const [cartCount, setCartCount] = useState<number>(2);
   const [isHeroComplete, setIsHeroComplete] = useState<boolean>(false);
-  const [introFinished, setIntroFinished] = useState<boolean>(false);
 
-  const handleAddToCart = (product: any) => {
+  const handleAddToCart = () => {
     setCartCount((prev) => prev + 1);
   };
 
-  const handleBookWithDoctor = (doctorName: string) => {
+  const handleBookWithDoctor = () => {
     const appointmentSection = document.getElementById('appointment');
     if (appointmentSection) {
       appointmentSection.scrollIntoView({ behavior: 'smooth' });

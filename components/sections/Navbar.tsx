@@ -12,7 +12,6 @@ import {
   PhoneCall,
   Sparkles,
   CalendarCheck,
-  Heart,
 } from 'lucide-react';
 import { NeuButton } from '@/components/ui/NeuButton';
 import { NeuIconDisc } from '@/components/ui/NeuIconDisc';
@@ -34,6 +33,14 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [showSearchModal, setShowSearchModal] = useState(false);
+
+  const handleSearchClick = () => {
+    if (onOpenSearch) {
+      onOpenSearch();
+    } else {
+      setShowSearchModal(true);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -132,7 +139,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 variant="raised"
                 ariaLabel="Search clinic services"
                 interactive
-                onClick={() => setShowSearchModal(true)}
+                onClick={handleSearchClick}
                 className="hidden sm:flex"
               >
                 <Search className="w-4 h-4 text-[#2B4A34]" />
@@ -142,10 +149,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               <NeuIconDisc
                 size="sm"
                 variant="raised"
-                ariaLabel="Pet Owner Account"
+                ariaLabel="Pet Owner Portal"
                 interactive
                 onClick={() => {
-                  alert('Pet Parent Portal: Secure login for medical records & vaccination passports.');
+                  document.getElementById('appointment')?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="hidden sm:flex"
               >

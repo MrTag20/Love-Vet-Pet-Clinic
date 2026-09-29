@@ -3,9 +3,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Phone, FlaskConical, Copy, Check, Sparkles, ArrowRight } from 'lucide-react';
+import { Phone, FlaskConical, Copy, Check, ArrowRight } from 'lucide-react';
 import { NeuCard } from '@/components/ui/NeuCard';
-import { NeuButton } from '@/components/ui/NeuButton';
 import { NeuIconDisc } from '@/components/ui/NeuIconDisc';
 
 export const PromoStrip: React.FC = () => {

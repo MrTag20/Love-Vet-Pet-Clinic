@@ -8,11 +8,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import {
   Sparkles,
-  Calendar,
   Clock,
   Phone,
-  ShieldCheck,
-  Heart,
   CheckCircle2,
   AlertCircle,
   FileCheck,
@@ -100,7 +97,7 @@ export const AppointmentSection: React.FC = () => {
       } else {
         setServerError(result.message || 'Something went wrong. Please check fields.');
       }
-    } catch (err: any) {
+    } catch {
       setServerError('Network error. Please try again or call our hotline.');
     } finally {
       setIsSubmitting(false);

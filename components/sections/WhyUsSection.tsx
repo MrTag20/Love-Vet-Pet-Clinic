@@ -14,7 +14,6 @@ import {
   CheckCircle,
 } from 'lucide-react';
 import { NeuCard } from '@/components/ui/NeuCard';
-import { NeuIconDisc } from '@/components/ui/NeuIconDisc';
 import { NeuBadge } from '@/components/ui/NeuBadge';
 
 export const WhyUsSection: React.FC = () => {

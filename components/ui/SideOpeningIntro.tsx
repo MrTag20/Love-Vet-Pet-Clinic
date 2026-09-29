@@ -127,7 +127,14 @@ export const SideOpeningIntro: React.FC<SideOpeningIntroProps> = ({
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="font-serif text-5xl sm:text-7xl font-black text-[#F3EEE1] tracking-tight leading-none drop-shadow-lg"
               >
-                Love<span className="text-[#D4A017]">Vet</span>
+                {companyName.includes(' ') ? (
+                  <>
+                    {companyName.split(' ')[0]}
+                    <span className="text-[#D4A017]"> {companyName.split(' ').slice(1).join(' ')}</span>
+                  </>
+                ) : (
+                  companyName
+                )}
               </motion.h1>
             </div>
 

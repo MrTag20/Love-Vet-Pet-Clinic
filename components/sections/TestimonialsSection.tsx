@@ -4,8 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Quote, ChevronLeft, ChevronRight, Sparkles, Heart } from 'lucide-react';
-import { NeuCard } from '@/components/ui/NeuCard';
-import { NeuIconDisc } from '@/components/ui/NeuIconDisc';
 
 export const TestimonialsSection: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);

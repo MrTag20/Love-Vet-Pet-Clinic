@@ -7,9 +7,7 @@ import {
   Phone,
   Mail,
   Send,
-  Heart,
   Check,
-  Sparkles,
 } from 'lucide-react';
 
 export const Footer: React.FC = () => {

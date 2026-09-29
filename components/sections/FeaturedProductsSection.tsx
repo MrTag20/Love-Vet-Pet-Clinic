@@ -7,9 +7,10 @@ import { Star, ShoppingBag, Check, Sparkles, ArrowRight } from 'lucide-react';
 import { NeuCard } from '@/components/ui/NeuCard';
 import { NeuBadge } from '@/components/ui/NeuBadge';
 import { NeuIconDisc } from '@/components/ui/NeuIconDisc';
+import { ProductItem } from '@/types';
 
 interface FeaturedProductsProps {
-  onAddToCart?: (product: any) => void;
+  onAddToCart?: (product: ProductItem) => void;
 }
 
 export const FeaturedProductsSection: React.FC<FeaturedProductsProps> = ({
@@ -17,7 +18,7 @@ export const FeaturedProductsSection: React.FC<FeaturedProductsProps> = ({
 }) => {
   const [addedIds, setAddedIds] = useState<Record<string, boolean>>({});
 
-  const products = [
+  const products: ProductItem[] = [
     {
       id: 'prod-1',
       name: 'PawVita Chicken & Rice Dry Dog Food',
@@ -26,8 +27,9 @@ export const FeaturedProductsSection: React.FC<FeaturedProductsProps> = ({
       originalPrice: 34.99,
       rating: 5.0,
       reviewsCount: 128,
-      badge: 'Best Seller' as const,
+      badge: 'Best Seller',
       image: '/images/prod-food.svg',
+      inStock: true,
     },
     {
       id: 'prod-2',
@@ -37,8 +39,9 @@ export const FeaturedProductsSection: React.FC<FeaturedProductsProps> = ({
       originalPrice: 16.99,
       rating: 4.9,
       reviewsCount: 96,
-      badge: 'Sale' as const,
+      badge: 'Sale',
       image: '/images/prod-toy.svg',
+      inStock: true,
     },
     {
       id: 'prod-3',
@@ -48,8 +51,9 @@ export const FeaturedProductsSection: React.FC<FeaturedProductsProps> = ({
       originalPrice: undefined,
       rating: 4.8,
       reviewsCount: 74,
-      badge: 'New' as const,
+      badge: 'New',
       image: '/images/prod-shampoo.svg',
+      inStock: true,
     },
     {
       id: 'prod-4',
@@ -61,10 +65,11 @@ export const FeaturedProductsSection: React.FC<FeaturedProductsProps> = ({
       reviewsCount: 43,
       badge: undefined,
       image: '/images/prod-bed.svg',
+      inStock: true,
     },
   ];
 
-  const handleAdd = (product: (typeof products)[0]) => {
+  const handleAdd = (product: ProductItem) => {
     setAddedIds((prev) => ({ ...prev, [product.id]: true }));
     if (onAddToCart) {
       onAddToCart(product);
@@ -92,13 +97,13 @@ export const FeaturedProductsSection: React.FC<FeaturedProductsProps> = ({
             </h2>
           </div>
 
-          <button
-            onClick={() => alert('Viewing complete veterinary pharmacy & nutrition catalog.')}
+          <a
+            href="#products"
             className="group inline-flex items-center gap-1.5 text-sm font-bold text-[#2B4A34] hover:text-[#D4A017] transition-colors cursor-pointer"
           >
-            <span>View All Products</span>
+            <span>All Products In Stock</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
 
         {/* 4 Column Product Grid */}
